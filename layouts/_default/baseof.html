@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US" class="h-100">
     {{- partial "head.html" . -}}
-    <body>
+    <body class="d-flex flex-column h-100">
         {{- partial "header.html" . -}}
-        <div id="content">
-        {{- block "main" . }}{{- end }}
-        </div>
+        <main role="main" class="flex-shrink-0">
+            {{- block "main" . }}{{- end }}
+        </main>
         {{- partial "footer.html" . -}}
+        {{- partial "scripts.html" . -}}
     </body>
 </html>
