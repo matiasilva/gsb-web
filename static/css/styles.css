@@ -1,15 +1,33 @@
 body {
   background-color: #134832;
   color: #fff;
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
 }
 
 .timer-digit {
-	text-align: center;
+  text-align: center;
 }
 
 .timer-container {
-	margin-left: 20%;
-	margin-right: 20%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.gsb-nav .nav-link {
+  padding: 0.25rem 0.35rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  border-bottom: 0.25rem solid transparent;
+}
+
+.gsb-nav .nav-link:hover,
+.gsb-nav .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+
+.gsb-nav .active {
+  color: #fff;
+  border-bottom-color: #fff;
 }
