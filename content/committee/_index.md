@@ -1,3 +1,4 @@
 ---
-layout: theCommittee
+layout: committee
+title: Committee
 ---
