@@ -1,4 +1,0 @@
----
-layout: committee
-title: Committee
----
