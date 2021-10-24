@@ -6,12 +6,16 @@ main {
   position: relative;
 }
 
-body{
+body {
   padding-top: 4rem;
 }
 
 .spacer {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  max-width: 40%
+  max-width: 40%;
+}
+
+.nav > .nav-item > .nav-link {
+  color: rgba(0, 0, 0, 0.55);
 }
