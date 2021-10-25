@@ -1,14 +1,78 @@
+:root {
+  --cream: rgb(242, 238, 214);
+  --darkGreen: rgb(37, 51, 35);
+  --red: rgb(172, 31, 20);
+  --darkPurple: rgb(73, 1, 39);
+  --black: rgb(3, 4, 3);
+  --green: rgb(97, 119, 60);
+  --blue: rgb(49, 153, 192);
+  --purple: rgb(94, 9, 74);
+  --pinkCream: rgb(244, 239, 238);
+  --orange: rgb(213, 124, 56);
+  --gold: rgb(192, 156, 47);
+  --brown: rgb(127, 100, 16);
+}
+
 .centered-header {
   max-width: 700px;
 }
 
-main {
-  position: relative;
+.py-5 {
+  background-image: url("SpringBallBanner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container > .navbar-brand {
+  font-family: "Snell Roundhand Bold";
+  color: var(--cream);
+}
+.container > .navbar-brand:hover {
+  color: var(--pinkCream);
+}
+.nav > .nav-item > .nav-link {
+  color: rgba(0, 0, 0, 0.55);
+}
+#navbarGSB {
+  background-color: var(--darkGreen);
 }
 
+
+main {
+  position: relative;
+  background-image: url("Umbrellas_PurpleOrange.jpg");
+}
 body {
   padding-top: 4rem;
+  color: var(--cream);
+  font-family: "Gill Sans Regular";
 }
+h1 {
+  font-family: "Hoefler Text";
+  color: var(--cream);
+}
+h1, h4 {
+  font-family: "Courier Regular";
+  color: var(--cream);
+}
+footer {
+  background-color: var(--darkGreen);
+  color: var(--cream);
+}
+
+
+.card {
+  border-color: var(--black);
+}
+.card-header {
+  background-color: var(--darkGreen);
+}
+.card-title {
+  font-family: "Courier Bold";
+}
+.card-body {
+  background-color: var(--brown);
+}
+
 
 .spacer {
   padding-top: 3rem;
@@ -16,6 +80,13 @@ body {
   max-width: 40%;
 }
 
-.nav > .nav-item > .nav-link {
-  color: rgba(0, 0, 0, 0.55);
+
+.btn-primary {
+  border-color: var(--darkGreen);
+  background-color: var(--gold);
+}
+.btn-primary:hover, .btn-primary:focus {
+  border-color: var(--red);
+  background-color: var(--purple);
+  color: var(--orange);
 }
