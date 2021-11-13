@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
 .centered-header {
   max-width: 700px;
 }
@@ -8,6 +13,20 @@
   max-width: 40%;
 }
 
-body{
-  padding-top: 4rem;
+body {
+  padding-top: 4.5rem;
+  font-family: "Cabin", sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Jost", sans-serif;
+}
+
+.numbers {
+  font-family: 'Courier Prime', monospace;
+}
+
+.jumbotron {
+  padding-top: 15%;
+  padding-bottom: 15%
 }
