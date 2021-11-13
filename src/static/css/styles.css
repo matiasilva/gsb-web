@@ -14,7 +14,6 @@
 }
 
 body {
-  padding-top: 4.5rem;
   font-family: "Cabin", sans-serif;
 }
 
@@ -27,6 +26,14 @@ h1, h2, h3, h4, h5 {
 }
 
 .jumbotron {
-  padding-top: 15%;
-  padding-bottom: 15%
+  padding-top: 8vh;
+  padding-bottom: 8vh;
+}
+
+.announce {
+  color: rgb(73, 1, 39);
+  text-shadow: 3px 3px rgb(210, 124, 2);
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
 }
