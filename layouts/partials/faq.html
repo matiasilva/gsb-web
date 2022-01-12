@@ -1,0 +1,19 @@
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button
+      class="accordion-button collapsed fw-bold"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#faq-{{ .i }}"
+    >
+      {{ .ctx.qtn }}
+    </button>
+  </h2>
+  <div
+    id="faq-{{ .i }}"
+    class="accordion-collapse collapse"
+    data-bs-parent="#faqs-accordion"
+  >
+    <div class="accordion-body">{{ .ctx.ans | markdownify }}</div>
+  </div>
+</div>
