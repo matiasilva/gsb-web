@@ -1,0 +1,9 @@
+- header: Standard
+  title: £125
+  desc: "Standard tickets grant you entry to the what promises to be the best Spring Ball. With a myriad of entertainment for all tastes, Girton Spring Ball is the place to be to see out the end of Lent term."
+  margin: ms-auto
+
+- header: Queue Jump
+  title: £135
+  desc: "Queue jump tickets are the same as standard but allow the ticketholder to enter the ball before standard ticket holders do, giving you more time to party the night away."
+  margin: me-auto
