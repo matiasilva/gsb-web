@@ -38,52 +38,25 @@
       >
         Tickets
       </h1>
-      <p class="fs-5 text-muted">
-        The ticket types can be found below. We hope to welcome Girton students,
-        alumni, guests, staff and the wider Cambridge community.
-      </p>
     </div>
-    <div class="row mb-3 text-center">
-      <div class="col-md-4 ms-auto">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Standard</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title numbers display-3">£125</h1>
-            <p class="mt-3 mb-4">
-              Standard tickets grant you entry to the what promises to be the
-              best Spring Ball. With a myriad of entertainment for all tastes,
-              Girton Spring Ball is the place to be to see out the end of Lent
-              term.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 me-auto">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Queue Jump</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title numbers display-3">£135</h1>
-            <p class="mt-3 mb-4">
-              Queue jump tickets are the same as standard but allow the
-              ticketholder to enter the ball before standard ticket holders do,
-              giving you more time to party the night away.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="d-grid col-6 mx-auto">
-      <a
-        class="btn btn-primary btn-lg"
-        style="background-color: rgb(73, 1, 39); border-color: rgb(73, 1, 39)"
-        href="https://girtonball.eventbrite.co.uk"
-        >Get your ticket!</a
-      >
-    </div>
+    <div
+    class="alert mb-0 mx-auto"
+    style="
+      background-color: rgba(210, 124, 21, 0.3);
+      color: black;
+      border-color: #e9bd8a;
+      max-width: 768px;
+    "
+  >
+    <h4 class="alert-heading">
+      <i class="bi bi-info-circle-fill me-2"></i>GSB 2022 has sold out!
+    </h4>
+    <ul class="mb-0">
+      <li>Ticketholders will receive more information closer to the event date</li>
+      <li>Take note of the information below on tickets</li>
+      <li>Read <a href="/faqs">our FAQs</a> if needed</li>
+    </ul>
+  </div>
   </div>
 </section>
 {{ partial "spacer" . }}
@@ -105,20 +78,17 @@
             <i class="bi-clock me-2"></i>Ticket release
           </h4>
           <p>
-            Tickets will be released in two waves. The first will start on
-            Monday the 22nd of November at 7PM and the second will start on the
-            29th of November at 7PM.
+            All tickets have been released and sold. Beware of anyone attempting to sell a GSB 2022 ticket on any online forums.
           </p>
         </div>
       </div>
       <div class="col d-flex align-items-start">
         <div>
           <h4 class="fw-bold mb-0">
-            <i class="bi bi-ticket-detailed me-2"></i>First release
+            <i class="bi bi-exclamation-triangle me-2"></i>Scams
           </h4>
           <p>
-            In the first wave, tickets will be sold to Girton students only.
-            Girton alumni will be able to purchase tickets in the second wave.
+            If you are participating in a ticket exchange or swap, always verify the seller's identity by concacting our IT officers beforehand.
           </p>
         </div>
       </div>
@@ -128,9 +98,7 @@
             <i class="bi-people me-2"></i>Guest tickets
           </h4>
           <p>
-            Guest tickets will be made available in the second wave, but limited
-            to 2 per member and will have to be purchased via a member of Girton
-            College.
+            Guest tickets are limited to 2 per member and will have to be purchased via a member of Girton College.
           </p>
         </div>
       </div>
@@ -163,27 +131,7 @@
         </div>
       </div>
     </div>
-    <div
-      class="alert mb-0"
-      style="
-        background-color: rgba(210, 124, 21, 0.3);
-        color: black;
-        border-color: #e9bd8a;
-      "
-    >
-      <h4 class="alert-heading">
-        <i class="bi bi-info-circle-fill me-2"></i>Important information for the
-        1st release
-      </h4>
-      <ul class="mb-0">
-        <li>Open only to Girton students</li>
-        <li>First release opens on Monday the 22nd of November at 7PM</li>
-        <li>Use your Cambridge email for registration</li>
-        <li>
-          Reply to our RSVP email within 72hrs of receipt to secure your ticket
-        </li>
-      </ul>
-    </div>
+    
   </div>
 </section>
 {{ partial "spacer" . }}
@@ -217,28 +165,6 @@
         >
       </li>
     </ul>
-  </div>
-</section>
-{{ partial "spacer" . }}
-<section>
-  <div class="centered-header pb-md-4 mx-auto text-center">
-    <h1
-      class="display-4 fw-bold"
-      id="faqs"
-      style="color: rgb(192, 156, 47); text-shadow: 3px 3px rgb(73, 1, 39)"
-    >
-      FAQs
-    </h1>
-  </div>
-  <div class="container px-4 py-4">
-    <div class="accordion" id="faqs-accordion">
-      {{ $i := 0 }} 
-      {{ range $.Site.Data.faqs }} 
-      {{ $i = add $i 1 }} 
-      {{ partial
-      "faq.html" (dict "ctx" . "i" $i) }} 
-      {{ end }}
-    </div>
   </div>
 </section>
 {{ end }}
