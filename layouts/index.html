@@ -1,150 +1,18 @@
 {{ define "main" }}
-<div class="alert alert-info text-center">
-    We're hiring student staff for GSB 2022! Read more <a href="/staffing">here</a>.
-  </div>
-<section
-  class="jumbotron text-center"
-  style="background: url('/images/clouds.jpg') 50% 75% no-repeat"
->
-  <div class="container">
-    <h1 class="announce my-2 display-1">Girton Spring Ball 2022</h1>
-  </div>
-</section>
-<section>
-  <div class="container">
-    <div class="p-3 pb-md-4 mx-auto text-center">
-      <img
-        src="/images/logo.jpg"
-        class="rounded mb-2 mb-sm-4"
-        style="max-width: 50%"
-      />
-      <p class="fs-5 mb-4">{{ $.Site.Params.description }}</p>
-      <div class="ratio ratio-16x9">
-        <iframe
-          src="https://drive.google.com/file/d/1cSV8tgt2quxQrRCt8N65cAMMvKyBemx3/preview"
-          width="1280"
-          height="720"
-          allow="autoplay"
-        ></iframe>
-      </div>
-    </div>
-  </div>
-</section>
-{{ partial "spacer" . }}
-<section>
-  <div class="container">
-    <div class="centered-header p-3 pb-md-4 mx-auto text-center">
-      <h1
-        class="display-4 fw-bold"
-        id="tickets"
-        style="color: rgb(73, 1, 39); text-shadow: 3px 3px rgb(49, 153, 192)"
-      >
-        Tickets
-      </h1>
-    </div>
-    <div
-    class="alert mb-0 mx-auto"
-    style="
-      background-color: rgba(210, 124, 21, 0.3);
-      color: black;
-      border-color: #e9bd8a;
-      max-width: 768px;
-    "
-  >
-    <h4 class="alert-heading">
-      <i class="bi bi-info-circle-fill me-2"></i>GSB 2022 has sold out!
-    </h4>
-    <ul class="mb-0">
-      <li>Ticketholders will receive more information closer to the event date</li>
-      <li>Take note of the information below on tickets</li>
-      <li>Read <a href="/faqs">our FAQs</a> if needed</li>
-    </ul>
-  </div>
-  </div>
-</section>
+<div class="container text-center">
+  <h1 class="announce my-2 display-1">Girton Spring Ball 2022</h1>
+  <p class="lead">
+    We've temporarily simplified our website to support you, our guests, with the most useful information before the
+    ball.
+  </p>
+</div>
+<div class="my-4 mx-auto px-2" style="max-width: 768px;">
+  {{ .Content }}
+</div>
 {{ partial "spacer" . }}
 <section>
   <div class="centered-header pb-md-4 mx-auto text-center">
-    <h1
-      class="display-4 fw-bold"
-      id="tickets"
-      style="color: rgb(210, 124, 21); text-shadow: 3px 3px rgb(97, 119, 60)"
-    >
-      Ticket Information
-    </h1>
-  </div>
-  <div class="container px-4 py-4">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-      <div class="col d-flex align-items-start">
-        <div>
-          <h4 class="fw-bold mb-0">
-            <i class="bi-clock me-2"></i>Ticket release
-          </h4>
-          <p>
-            All tickets have been released and sold. Beware of anyone attempting to sell a GSB 2022 ticket on any online forums.
-          </p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <div>
-          <h4 class="fw-bold mb-0">
-            <i class="bi bi-exclamation-triangle me-2"></i>Scams
-          </h4>
-          <p>
-            If you are participating in a ticket exchange or swap, always verify the seller's identity by concacting our IT officers beforehand.
-          </p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <div>
-          <h4 class="fw-bold mb-0">
-            <i class="bi-people me-2"></i>Guest tickets
-          </h4>
-          <p>
-            Guest tickets are limited to 2 per member and will have to be purchased via a member of Girton College.
-          </p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <div>
-          <h4 class="fw-bold mb-0"><i class="bi-cash me-2"></i>Refunds</h4>
-          <p>
-            Tickets to the Spring Ball are non-refundable. Please read our full
-            Terms and Conditions before buying.
-          </p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <div>
-          <h4 class="fw-bold mb-0">
-            <i class="bi bi-card-checklist me-2"></i>Terms and Conditions
-          </h4>
-          <p>Read our full terms <a href="/files/gsb-2022-tcs.pdf">here</a>.</p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <div>
-          <h4 class="fw-bold mb-0">
-            <i class="bi bi-question-circle-fill me-2"></i>More information
-          </h4>
-          <p>
-            Any further queries can be directed to our IT and Ticketing officers
-            at it@girtonball.com
-          </p>
-        </div>
-      </div>
-    </div>
-    
-  </div>
-</section>
-{{ partial "spacer" . }}
-<section>
-  <div class="centered-header pb-md-4 mx-auto text-center">
-    <h1
-      class="display-4 fw-bold"
-      id="socials"
-      style="color: rgb(49, 153, 192); text-shadow: 3px 3px rgb(172, 31, 20)"
-    >
+    <h1 class="display-4 fw-bold" id="socials" style="color: rgb(49, 153, 192); text-shadow: 3px 3px rgb(172, 31, 20)">
       Socials
     </h1>
     <p class="fs-5 text-muted">Follow us on our socials!</p>
@@ -153,19 +21,13 @@
     <ul class="d-flex align-items-center flex-column ps-0 mb-0">
       <li class="d-flex flex-row flex-nowrap align-items-center">
         <img src="/images/finger.png" />
-        <i class="bi-instagram me-2"></i
-        ><a
-          href="https://www.instagram.com/girtonspringball2022"
-          target="_blank"
-          >Instagram</a
-        >
+        <i class="bi-instagram me-2"></i><a href="https://www.instagram.com/girtonspringball2022"
+          target="_blank">Instagram</a>
       </li>
       <li class="d-flex flex-row flex-nowrap align-items-center">
         <img src="/images/finger.png" />
         <i class="bi-facebook me-2"></i>
-        <a href="https://www.facebook.com/girtonspringball2022" target="_blank"
-          >Facebook</a
-        >
+        <a href="https://www.facebook.com/girtonspringball2022" target="_blank">Facebook</a>
       </li>
     </ul>
   </div>

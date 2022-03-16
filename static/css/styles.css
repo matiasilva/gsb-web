@@ -12,12 +12,16 @@
   max-width: 40%;
 }
 
-h1, h2 {
+h1 {
   font-family: "Jost", sans-serif;
 }
 
 h3 + p, h3 + ul {
   margin-bottom: 2rem;
+}
+
+h2 {
+  margin-top: 2rem;
 }
 
 .numbers {

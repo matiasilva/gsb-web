@@ -1,1 +1,4 @@
 public/*
+hugo
+.hugo_build.lock
+.DS_store
